@@ -1,0 +1,444 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+:root {
+   --backgroundBody:   #e6be69;
+   --backgroundHeader: #eed5a7;
+   --colorText: #79532f;
+}
+
+html,
+body {
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+}
+
+body>footer {
+   margin-top: auto;
+}
+
+
+body {
+   background-color: var(--backgroundBody);
+   font-family: 'Lucida Sans';
+}
+
+
+
+header {
+   background-color: var(--backgroundHeader);
+   color: var(--colorText);
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 50px;
+   position: relative;
+}
+
+.acciones {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: auto;
+}
+
+.acciones input {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.acciones .btn {
+  padding: 6px 10px;
+  background-color: var(--backgroundBody);
+  color: var(--colorText);
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.acciones .btn:hover {
+  background-color: var(--backgroundBody);
+}
+
+
+
+.menu {
+   text-align: left;
+
+}
+
+
+
+#logo {
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+   display: flex;
+   flex-direction: row;
+   align-items: flex-end;
+   justify-content: center;
+   font-family: 'Lucida Sans';
+   font-size: 24px;
+}
+/*carrito*/
+.user-icons a {
+   text-decoration: none;
+   color: var(--colorText, #79532f);
+   margin-left: 1rem;
+   font-size: 1rem;
+   position: relative;
+ }
+
+ .icon-cart .contador {
+   background-color: rgb(233, 162, 162);
+   color: white;
+   border-radius: 50%;
+   padding: 2px 6px;
+   font-size: 12px;
+   position: absolute;
+   top: -8px;
+   right: -12px;
+ }
+
+ .tabla-carrito {
+   width: 90%;
+   max-width: 600px;
+   margin: 2rem auto;
+   border-collapse: collapse;
+   background-color: #fff;
+   box-shadow: 0 0 10px rgba(0,0,0,0.1);
+ }
+
+ .tabla-carrito th,
+ .tabla-carrito td {
+   padding: 0.75rem;
+   border: 1px solid #ccc;
+   text-align: center;
+ }
+
+ .total {
+   text-align: center;
+   font-size: 1.2rem;
+   font-weight: bold;
+   color: #444;
+ }
+
+/**/
+
+nav {
+   display: flex;
+   justify-content: center;
+   /* margin: 2rem auto 1rem;*/
+   margin-top: 2rem;
+   margin-bottom: 2rem;
+   font-family: 'Lucida Sans';
+
+}
+
+nav ul {
+   list-style: none;
+   display: flex;
+   gap: 1rem;
+   padding: 50;
+}
+
+nav li {
+   color: #3d2d19;
+   font-size: 20px;
+   padding: 0.25rem 1rem;
+   text-align: center;
+}
+
+nav li a {
+   text-decoration: none;
+   color: #3d2d19;
+}
+
+
+
+main {
+   
+   font-family: 'Lucida Sans';
+   color: var(--backgroundBody);
+   text-align: center;
+}
+
+section {
+   text-align: center;
+   margin-top: 50px;
+   margin-bottom: 50px;
+   font-family: 'Lucida Sans';
+
+   h2 {
+      margin: 1rem;
+   }
+
+   .product {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2rem;
+      justify-items: center;
+      justify-content: center;
+
+      .card {
+         width: 100%;
+         height: auto;
+
+         /*
+         border: 1px solid var(--colorText);*/
+         background-color: var(--backgroundHeader);
+         /*border-radius: 0.5rem;*/
+         transition: scale 0.5s ease-out;
+
+         img {
+            width: 100%;
+            height: auto;
+         }
+      }
+
+      .card:hover {
+         transform: scale(1.1);
+      }
+   }
+
+
+}
+
+button {
+   font-family: 'Lucida Sans';
+   color: var(--colorText);
+   border: none;
+   background-color: var(--backgroundHeader);
+}
+
+
+
+.container {
+   max-width: 960px;
+   margin: 0 auto;
+   padding: 100px;
+   background-color: #fff;
+   text-align: center;
+}
+
+.container img {
+   transition: transform 0.5s ease;
+}
+
+.container img:hover {
+   transform: scale(1.1);
+}
+
+.container-form {
+   display: flex;
+   flex-direction: column;
+   max-width: 400px;
+   width: 90%;
+   margin: auto;
+   margin-top: auto;
+   margin-bottom: 30px;
+   padding: 2rem;
+   text-align: center;
+   gap: 1rem;
+   
+   background-color: #fff;
+   backdrop-filter: blur(8px);
+   padding: 2rem;
+   
+}
+
+
+.container-form form {
+   display: flex;
+   flex-direction: column;
+   font-family: 'Lucida Sans';
+}
+
+.container-form h2 {
+   margin-bottom: 1.5rem;
+   font-size: 24px;
+   color: var(--colorText);
+   font-family: 'Lucida Sans';
+}
+
+.container-form input {
+   padding: 10px;
+   margin-bottom: 15px;
+   border: 1px solid #ccc;
+   /*border-radius: 5px;*/
+   font-size: 16px;
+   font-family: 'Lucida Sans';
+}
+
+.container-form textarea {
+   width: 100%;
+   padding: 10px;
+   border: 1px solid #ccc;
+   /*border-radius: 5px;*/
+   font-size: 16px;
+   font-family: 'Lucida Sans';
+   resize: vertical;
+}
+
+
+.boton-ingresar {
+   padding: 10px;
+   font-size: 16px;
+   background-color: var(--backgroundHeader);
+   color: var(--colorText);
+   border: none;
+   
+   cursor: pointer;
+   transition: background 0.3s ease;
+}
+
+.boton-ingresar:hover {
+   background-color: #d4c48a;
+}
+
+.boton-enviar {
+   padding: 10px;
+   font-size: 16px;
+   background-color: var(--backgroundHeader);
+   color: var(--colorText);
+   border: none;
+   /*border-radius: 5px;*/
+   cursor: pointer;
+   transition: background 0.3s ease;
+
+}
+
+.boton-enviar:hover {
+   background-color: #d4c48a;
+}
+
+.form-opciones {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 14px;
+  color: var(--colorText);
+}
+
+.form-opciones a {
+  color: var(--colorText);
+  text-decoration: none;
+}
+
+.form-opciones a:hover {
+  text-decoration: underline;
+}
+
+.form-registro {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.form-registro a {
+  font-weight: bold;
+  color: var(--colorText);
+  text-decoration: none;
+}
+
+.form-registro a:hover {
+  text-decoration: underline;
+}
+
+
+.container-form-registro {
+  width: 500px;
+  margin: 50px auto 50px auto;
+  text-align: left;
+}
+
+/* Formulario dentro del contenedor de registro */
+.container-form-registro form.registrar {
+  background: #fff;
+  padding: 20px;
+  }
+
+/* Título */
+.container-form-registro h2 {
+  margin-bottom: 20px;
+  color: var(--colorText);
+}
+
+/* Inputs */
+.container-form-registro input {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+  
+}
+
+/* Botón */
+.container-form-registro button {
+  width: 100%;
+  padding: 10px;
+  background: var(--backgroundHeader);
+  border: none;
+  color: var(--colorText);
+  
+  cursor: pointer;
+}
+
+
+
+footer {
+
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   background-color: var(--backgroundHeader);
+   color: #79532f;
+   text-align: center;
+   padding: 10px;
+   font-size: 14px;
+   box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* ---------------------------------------
+   MEDIA QUERIES - Estilos responsive
+---------------------------------------- */
+
+@media (max-width: 800px) {
+   .product {
+      grid-template-columns: repeat(3, 1fr);
+   }
+}
+
+@media (max-width: 600px) {
+   .product {
+      grid-template-columns: repeat(2, 1fr);
+   }
+}
+
+@media (max-width: 400px) {
+   .product {
+      grid-template-columns: 1fr;
+   }
+
+   .card {
+      padding: 0.5rem;
+      font-size: 0.9rem;
+   }
+
+   nav li {
+      font-size: 16px;
+   }
+
+   #logo {
+      font-size: 20px;
+   }
+
+   footer {
+      font-size: 12px;
+      padding: 8px;
+   }
+}
