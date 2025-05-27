@@ -4,42 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <script src="./js/formularioContacto.js"></script>
+
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <title>contactanos</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="../css/style.css" />
+
+
 </head>
 
 <body>
-
-    <header>
-        <div class="menu">
-            <a href="../index.html"> <img src="../assets/Imagenes/iconomenu.png" height="30" alt="menu"></a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light px-3">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="../assets/Imagenes/Round Photo_Oct202023_090136.png" alt="Logo" width="80" class="me-2" />
+                <h3>collect.sun</h3>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="FormularioDeRegistro.html">Regristrate</a></li>
+                    
+                    <li class="nav-item"><a class="nav-link" href="InicioSesion.html"><i class="bi bi-person"></i></a>
+                    </li>
+                </ul>
+            </div>
         </div>
-
-        <div id="logo">
-            <img src="../assets/Imagenes/Round Photo_Oct202023_090136.png" height="100" alt="collect.sun">
-
-        </div>
-    </header>
-
-    <nav>
-        <ul>
-            <li>
-                <a class="a1" href="../index.html">Inicio</a>
-            </li>
-            <li>
-                <a class="a2" href="productos.html">Productos</a>
-            </li>
-            <li>
-                <a class="a3" href="FormularioDeRegistro.html">Regristrate</a>
-            </li>
-            <li>
-                <a href="carrito.html">Carrito</a>
-            </li>
-        </ul>
     </nav>
-
 
 
     <div class="container-form">
@@ -66,6 +64,12 @@
             ✨ my creations @ <a href="https://www.instagram.com/collect.sun/#"> collect.sun </a>
         </div>
     </footer>
+
+
+
+
+    <script src="./js/formularioContacto.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 
 </body>

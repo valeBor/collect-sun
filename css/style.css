@@ -442,3 +442,116 @@ footer {
       padding: 8px;
    }
 }
+
+.navbar .nav-link {
+  color: var(--colorText) !important; 
+}
+
+.navbar-brand h3 {
+  color: var(--colorText) !important;
+  font-weight: bold;
+  align-items: flex-end !important;
+}
+
+.navbar {
+  background-color: #f4e3c1 !important; 
+  
+}
+
+.navbar {
+  margin-top: 0 !important;
+}
+
+
+
+.footer-personalizado {
+  background-color: #f3d8a9 !important;   
+  color: var(--colorText);              
+}
+footer a {
+  color: var(--colorText);              
+  text-decoration: none;
+}
+
+
+.card {
+  border: 1px solid #c9b695;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.card-title {
+  color: var(--colorText) !important;
+  font-size: 1.2rem;
+}
+
+.card-text {
+
+color: var(--colorText) !important;
+
+}
+
+.card-footer button {
+  background-color: #e5c89e !important;
+  color: var(--colorText);
+  font-weight: bold;
+  font-family: 'Lucida Sans' !important;
+
+}
+
+
+.carrito-aside {
+  position: fixed;
+  top: 0;
+  right: -350px;
+  width: 300px;
+  height: 100%;
+  background-color: #fdf6ee;
+  border-left: 2px solid #c5a982;
+  box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+  transition: right 0.3s ease-in-out;
+  z-index: 9999;
+}
+
+.carrito-aside.abierto {
+  right: 0;
+}
+
+
+.carrito-aside {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff4e6; /* color pastel arena */
+  color: #5d3b1e; /* marrón */
+  border-left: 2px solid #bfa585;
+}
+.carrito-aside h5 {
+  background-color: #f1d8b4;
+  padding: 1rem;
+  margin: 0;
+  color: #4a3522;
+}
+
+#cerrar-carrito {
+  border: 1px solid #b28e5d;     /* Borde arena */
+  background-color: #fff4e6;     /* Fondo claro pastel */
+  color: #5d3b1e;                /* Texto marrón */
+  font-weight: bold;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  line-height: 18px;
+  padding: 0;
+  text-align: center;
+}
+
+#contador-carrito {
+  background-color: #d6b27f; /* color arena pastel */
+  color: var(--colorText);            /* marrón oscuro */
+}
