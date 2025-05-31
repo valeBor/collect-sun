@@ -43,60 +43,75 @@
     </nav>
 
 
-    <div class="container my-5" style="max-width: 600px;">
-        <!-- Formulario aquí -->
+    <main>
 
+        <section>
 
+            <div class="container-fluid pt-5 pb-5 bg-light">
+                <div class="row justify-content-center">
+                    <div class="col-md-6 col-11">
 
+                        <div class="mb-4">
+                            <h2 class="fw-bold text-center">¡Registrate!</h2>
+                            
+                        </div>
 
-        <form id="form-registro" class="p-4 shadow rounded bg-white">
-            <h2 class="fw-bold text-center">¡Registrate!</h2>
-           
+                        <form id="form-registro" class="bg-white p-4 rounded shadow-sm">
 
-            <h6 class="mt-4">Datos necesarios</h6>
+                            <h6 class="pt-3">Datos necesarios</h6>
+                            <div class="mb-3">
+                                <input name="registro_nombre" type="text" class="form-control"
+                                    placeholder="Nombre Completo" required>
+                            </div>
+                            <div class="mb-3">
+                                <input name="registro_dni" type="text" class="form-control" placeholder="DNI o CUIT"
+                                    required>
+                            </div>
+                            <div class="mb-3">
+                                <input name="registro_mail" type="email" class="form-control" placeholder="e-Mail"
+                                    required>
+                            </div>
+                            <div class="mb-3">
+                                <input name="registro_telefono" type="tel" class="form-control"
+                                    placeholder="Teléfono Celular" required>
+                            </div>
 
-            <div class="mb-3">
-                <input type="text" class="form-control" placeholder="Nombre Completo" required>
+                            <h6 class="pt-3">Datos para envío <span class="text-muted">(opcionales)</span></h6>
+                            <div class="mb-3">
+                                <input name="registro_direccion" type="text" class="form-control"
+                                    placeholder="Dirección">
+                            </div>
+                            <div class="mb-3">
+                                <input name="registro_localidad" type="text" class="form-control"
+                                    placeholder="Localidad">
+                            </div>
+                            <div class="mb-3">
+                                <input name="registro_cp" type="text" class="form-control" placeholder="Código Postal">
+                            </div>
+                            <div class="mb-4">
+                                <select name="registro_provincia" class="form-select">
+                                    <option selected disabled>Provincia</option>
+                                    <option value="BA">Buenos Aires</option>
+                                    <option value="CABA">CABA</option>
+                                    <option value="SF">Santa Fe</option>
+                                    <option value="CB">Córdoba</option>
+                                    <option value="MD">Mendoza</option>
+                                    
+                                </select>
+                            </div>
+
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-success px-4">¡ Registrarme !</button>
+                            </div>
+
+                        </form>
+
+                    </div>
+                </div>
             </div>
-            <div class="mb-3">
-                <input type="text" class="form-control" placeholder="DNI o CUIT" required>
-            </div>
-            <div class="mb-3">
-                <input type="email" class="form-control" placeholder="e-Mail" required>
-            </div>
-            <div class="mb-3">
-                <input type="tel" class="form-control" placeholder="Teléfono Celular">
-            </div>
 
-            <h6 class="mt-4">Datos para envío (opcionales)</h6>
-
-            <div class="mb-3">
-                <input type="text" class="form-control" placeholder="Dirección">
-            </div>
-            <div class="mb-3">
-                <input type="text" class="form-control" placeholder="Localidad">
-            </div>
-            <div class="mb-3">
-                <input type="text" class="form-control" placeholder="Código Postal">
-            </div>
-            <div class="mb-4">
-                <select class="form-select">
-                    <option selected disabled>Provincia de Buenos Aires</option>
-                    <option>Córdoba</option>
-                    <option>Santa Fe</option>
-                    <option>Mendoza</option>
-                    <!-- etc -->
-                </select>
-            </div>
-
-            <div class="text-center">
-                <button class="btn btn-success px-4" type="submit">¡ Registrarme !</button>
-            </div>
-        </form>
-
-
-    </div>
-
+        </section>
+    </main>
 
     <footer>
 

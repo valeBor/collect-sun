@@ -5,7 +5,7 @@
 }
 
 :root {
-   --backgroundBody:   #e6be69;
+   --backgroundBody: #e6be69;
    --backgroundHeader: #eed5a7;
    --colorText: #79532f;
 }
@@ -40,28 +40,28 @@ header {
 }
 
 .acciones {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-left: auto;
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   margin-left: auto;
 }
 
 .acciones input {
-  padding: 5px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
+   padding: 5px;
+   border-radius: 5px;
+   border: 1px solid #ccc;
 }
 
 .acciones .btn {
-  padding: 6px 10px;
-  background-color: var(--backgroundBody);
-  color: var(--colorText);
-  border-radius: 5px;
-  text-decoration: none;
+   padding: 6px 10px;
+   background-color: var(--backgroundBody);
+   color: var(--colorText);
+   border-radius: 5px;
+   text-decoration: none;
 }
 
 .acciones .btn:hover {
-  background-color: var(--backgroundBody);
+   background-color: var(--backgroundBody);
 }
 
 
@@ -84,6 +84,7 @@ header {
    font-family: 'Lucida Sans';
    font-size: 24px;
 }
+
 /*carrito*/
 .user-icons a {
    text-decoration: none;
@@ -91,9 +92,9 @@ header {
    margin-left: 1rem;
    font-size: 1rem;
    position: relative;
- }
+}
 
- .icon-cart .contador {
+.icon-cart .contador {
    background-color: rgb(233, 162, 162);
    color: white;
    border-radius: 50%;
@@ -102,30 +103,30 @@ header {
    position: absolute;
    top: -8px;
    right: -12px;
- }
+}
 
- .tabla-carrito {
+.tabla-carrito {
    width: 90%;
    max-width: 600px;
    margin: 2rem auto;
    border-collapse: collapse;
    background-color: #fff;
-   box-shadow: 0 0 10px rgba(0,0,0,0.1);
- }
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
- .tabla-carrito th,
- .tabla-carrito td {
+.tabla-carrito th,
+.tabla-carrito td {
    padding: 0.75rem;
    border: 1px solid #ccc;
    text-align: center;
- }
+}
 
- .total {
+.total {
    text-align: center;
    font-size: 1.2rem;
    font-weight: bold;
    color: #444;
- }
+}
 
 /**/
 
@@ -161,10 +162,11 @@ nav li a {
 
 
 main {
-   
+
    font-family: 'Lucida Sans';
-   color: var(--backgroundBody);
+   color: var(--colorText) !important;
    text-align: center;
+
 }
 
 section {
@@ -244,11 +246,11 @@ button {
    padding: 2rem;
    text-align: center;
    gap: 1rem;
-   
+
    background-color: #fff;
    backdrop-filter: blur(8px);
    padding: 2rem;
-   
+
 }
 
 
@@ -291,7 +293,7 @@ button {
    background-color: var(--backgroundHeader);
    color: var(--colorText);
    border: none;
-   
+
    cursor: pointer;
    transition: background 0.3s ease;
 }
@@ -317,75 +319,75 @@ button {
 }
 
 .form-opciones {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 10px;
-  font-size: 14px;
-  color: var(--colorText);
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-top: 10px;
+   font-size: 14px;
+   color: var(--colorText);
 }
 
 .form-opciones a {
-  color: var(--colorText);
-  text-decoration: none;
+   color: var(--colorText);
+   text-decoration: none;
 }
 
 .form-opciones a:hover {
-  text-decoration: underline;
+   text-decoration: underline;
 }
 
 .form-registro {
-  margin-top: 20px;
-  text-align: center;
-  font-size: 14px;
+   margin-top: 20px;
+   text-align: center;
+   font-size: 14px;
 }
 
 .form-registro a {
-  font-weight: bold;
-  color: var(--colorText);
-  text-decoration: none;
+   font-weight: bold;
+   color: var(--colorText);
+   text-decoration: none;
 }
 
 .form-registro a:hover {
-  text-decoration: underline;
+   text-decoration: underline;
 }
 
 
 .container-form-registro {
-  width: 500px;
-  margin: 50px auto 50px auto;
-  text-align: left;
+   width: 500px;
+   margin: 50px auto 50px auto;
+   text-align: left;
 }
 
 /* Formulario dentro del contenedor de registro */
 .container-form-registro form.registrar {
-  background: #fff;
-  padding: 20px;
-  }
+   background: #fff;
+   padding: 20px;
+}
 
 /* Título */
 .container-form-registro h2 {
-  margin-bottom: 20px;
-  color: var(--colorText);
+   margin-bottom: 20px;
+   color: var(--colorText) !important;
 }
 
 /* Inputs */
 .container-form-registro input {
-  width: 90%;
-  padding: 10px;
-  margin-bottom: 10px;
-  
+   width: 90%;
+   padding: 10px;
+   margin-bottom: 10px;
+
 }
 
 /* Botón */
 .container-form-registro button {
-  width: 100%;
-  padding: 10px;
-  background: var(--backgroundHeader);
-  border: none;
-  color: var(--colorText);
-  
-  cursor: pointer;
+   width: 100%;
+   padding: 10px;
+   background: var(--backgroundHeader);
+   border: none;
+   color: var(--colorText);
+
+   cursor: pointer;
 }
 
 
@@ -444,125 +446,142 @@ footer {
 }
 
 .navbar .nav-link {
-  color: var(--colorText) !important; 
+   color: var(--colorText) !important;
 }
 
 .navbar-brand h3 {
-  color: var(--colorText) !important;
-  font-weight: bold;
-  align-items: flex-end !important;
+   color: var(--colorText) !important;
+   font-weight: bold;
+   align-items: flex-end !important;
 }
 
 .navbar {
-  background-color: #f4e3c1 !important; 
-  
+   background-color: #f4e3c1 !important;
+
 }
 
 .navbar {
-  margin-top: 0 !important;
+   margin-top: 0 !important;
 }
 
 
 
 .footer-personalizado {
-  background-color: #f3d8a9 !important;   
-  color: var(--colorText);              
+   background-color: #f3d8a9 !important;
+   color: var(--colorText);
 }
+
 footer a {
-  color: var(--colorText);              
-  text-decoration: none;
+   color: var(--colorText);
+   text-decoration: none;
 }
 
 
 .card {
-  border: 1px solid #c9b695;
-  border-radius: 12px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+   border: 1px solid #c9b695;
+   border-radius: 12px;
+   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .card-img-top {
-  height: 200px;
-  object-fit: cover;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
+   height: 200px;
+   object-fit: cover;
+   border-top-left-radius: 12px;
+   border-top-right-radius: 12px;
 }
 
 .card-title {
-  color: var(--colorText) !important;
-  font-size: 1.2rem;
+   color: var(--colorText) !important;
+   font-size: 1.2rem;
 }
 
 .card-text {
 
-color: var(--colorText) !important;
+   color: var(--colorText) !important;
 
 }
 
 .card-footer button {
-  background-color: #e5c89e !important;
-  color: var(--colorText);
-  font-weight: bold;
-  font-family: 'Lucida Sans' !important;
+   background-color: #e5c89e !important;
+   color: var(--colorText);
+   font-weight: bold;
+   font-family: 'Lucida Sans' !important;
 
 }
 
 
 .carrito-aside {
-  position: fixed;
-  top: 0;
-  right: -350px;
-  width: 300px;
-  height: 100%;
-  background-color: #fdf6ee;
-  border-left: 2px solid #c5a982;
-  box-shadow: -2px 0 5px rgba(0,0,0,0.1);
-  transition: right 0.3s ease-in-out;
-  z-index: 9999;
+   position: fixed;
+   top: 0;
+   right: -350px;
+   width: 300px;
+   height: 100%;
+   background-color: #fdf6ee;
+   border-left: 2px solid #c5a982;
+   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+   transition: right 0.3s ease-in-out;
+   z-index: 9999;
 }
 
 .carrito-aside.abierto {
-  right: 0;
+   right: 0;
 }
 
 
 .carrito-aside {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #fff4e6; /* color pastel arena */
-  color: #5d3b1e; /* marrón */
-  border-left: 2px solid #bfa585;
+   font-family: 'Segoe UI', sans-serif;
+   background-color: #fff4e6;
+   /* color pastel arena */
+   color: #5d3b1e;
+   /* marrón */
+   border-left: 2px solid #bfa585;
 }
+
 .carrito-aside h5 {
-  background-color: #f1d8b4;
-  padding: 1rem;
-  margin: 0;
-  color: #4a3522;
+   background-color: #f1d8b4;
+   padding: 1rem;
+   margin: 0;
+   color: #4a3522;
 }
 
 #cerrar-carrito {
-  border: 1px solid #b28e5d;     /* Borde arena */
-  background-color: #fff4e6;     /* Fondo claro pastel */
-  color: #5d3b1e;                /* Texto marrón */
-  font-weight: bold;
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  line-height: 18px;
-  padding: 0;
-  text-align: center;
+   border: 1px solid #b28e5d;
+   /* Borde arena */
+   background-color: #fff4e6;
+   /* Fondo claro pastel */
+   color: #5d3b1e;
+   /* Texto marrón */
+   font-weight: bold;
+   border-radius: 50%;
+   width: 30px;
+   height: 30px;
+   line-height: 18px;
+   padding: 0;
+   text-align: center;
 }
 
 #contador-carrito {
-  background-color: #d6b27f; /* color arena pastel */
-  color: var(--colorText);            /* marrón oscuro */
+   background-color: #d6b27f;
+   /* color arena pastel */
+   color: var(--colorText);
+   /* marrón oscuro */
 }
 
 
 .btn-success {
-  background-color: var(--backgroundHeader) !important;
-  border-color: var(--backgroundHeader) !important;
-  color: #333 !important;
+   background-color: var(--backgroundHeader) !important;
+   border-color: var(--backgroundHeader) !important;
+   color: #333 !important;
 }
+
 .btn-success:hover {
-  background-color: var(--backgroundBody) !important;
-  border-color: var(--backgroundBody) !important;
+   background-color: var(--backgroundBody) !important;
+   border-color: var(--backgroundBody) !important;
+}
+
+.bg-light {
+
+
+   background-color: #f5de99 !important;
+
 }
