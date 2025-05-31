@@ -555,3 +555,14 @@ color: var(--colorText) !important;
   background-color: #d6b27f; /* color arena pastel */
   color: var(--colorText);            /* marrón oscuro */
 }
+
+
+.btn-success {
+  background-color: var(--backgroundHeader) !important;
+  border-color: var(--backgroundHeader) !important;
+  color: #333 !important;
+}
+.btn-success:hover {
+  background-color: var(--backgroundBody) !important;
+  border-color: var(--backgroundBody) !important;
+}

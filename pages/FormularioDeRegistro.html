@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
 
     <title>Registrate</title>
@@ -34,7 +34,7 @@
                     <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link" href="Productos.html">Productos</a></li>
                     <li class="nav-item"><a class="nav-link" href="FormularioDeContacto.html">Contactame</a></li>
-                    
+
                     <li class="nav-item"><a class="nav-link" href="InicioSesion.html"><i class="bi bi-person"></i></a>
                     </li>
                 </ul>
@@ -42,62 +42,60 @@
         </div>
     </nav>
 
-    
+
+    <div class="container my-5" style="max-width: 600px;">
+        <!-- Formulario aquí -->
 
 
-    <div class="container-form-registro">
-        <form class="registrar" method="get">
-
-            <center>
-                <h2>Registrate </h2>
-            </center>
-
-            Nombre Completo
-            <input type="text" name="Nombre"> <br>
-            <br>
-
-            Correo Electronico
-            <input type="email" name="Correo"> <br>
-            <br>
-
-            Contraseña
-            <input type="password" name="Contrasena" id="contrasena"> <br>
-            <br>
-
-            Repetir Contraseña
-            <input type="password" name="Contrasena" id="contrasena"> <br>
-            <br>
-
-            Fecha de nacimiento
-            <input type="date" name="Fecha"> <br>
-            <br>
-
-            Genero
-
-            <select name="menu" id="">
-
-                <option value="M"> Masculino</option>
-                <option value="F"> Femenino</option>
-                <option value="O"> Otros</option>
 
 
-            </select>
-            <br><br>
+        <form id="form-registro" class="p-4 shadow rounded bg-white">
+            <h2 class="fw-bold text-center">¡Registrate!</h2>
+           
 
-            Pais de residencia
-            <input type="text" name="Pais"> <br>
-            <br>
+            <h6 class="mt-4">Datos necesarios</h6>
 
+            <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Nombre Completo" required>
+            </div>
+            <div class="mb-3">
+                <input type="text" class="form-control" placeholder="DNI o CUIT" required>
+            </div>
+            <div class="mb-3">
+                <input type="email" class="form-control" placeholder="e-Mail" required>
+            </div>
+            <div class="mb-3">
+                <input type="tel" class="form-control" placeholder="Teléfono Celular">
+            </div>
 
-            <center>Aceptacion de Terminos y condiciones</center>
-            <input type="checkbox" name="validar"> <br>
-            <br>
+            <h6 class="mt-4">Datos para envío (opcionales)</h6>
 
+            <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Dirección">
+            </div>
+            <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Localidad">
+            </div>
+            <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Código Postal">
+            </div>
+            <div class="mb-4">
+                <select class="form-select">
+                    <option selected disabled>Provincia de Buenos Aires</option>
+                    <option>Córdoba</option>
+                    <option>Santa Fe</option>
+                    <option>Mendoza</option>
+                    <!-- etc -->
+                </select>
+            </div>
 
-            <button type="button" onclick="formRegistro()"> Enviar </button>
+            <div class="text-center">
+                <button class="btn btn-success px-4" type="submit">¡ Registrarme !</button>
+            </div>
         </form>
-    </div>
 
+
+    </div>
 
 
     <footer>
