@@ -64,16 +64,24 @@
                                     placeholder="Nombre Completo" required>
                             </div>
                             <div class="mb-3">
-                                <input name="registro_dni" type="text" class="form-control" placeholder="DNI o CUIT"
-                                    required>
+
+                                <input name="registro_dni" type="number" inputmode="numeric" class="form-control"
+                                    placeholder="DNI o CUIT" pattern="\d+" title="Solo se permiten números" required>
+
                             </div>
                             <div class="mb-3">
+
                                 <input name="registro_mail" type="email" class="form-control" placeholder="e-Mail"
-                                    required>
+                                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                                    title="Debe contener @ y un formato de correo válido" required>
+
+
                             </div>
                             <div class="mb-3">
+
                                 <input name="registro_telefono" type="tel" class="form-control"
-                                    placeholder="Teléfono Celular" required>
+                                    placeholder="Teléfono Celular" pattern="\d+" title="Solo se permiten números"
+                                    required>
                             </div>
 
                             <h6 class="pt-3">Datos para envío <span class="text-muted">(opcionales)</span></h6>

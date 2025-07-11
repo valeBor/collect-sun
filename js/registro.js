@@ -15,3 +15,11 @@ const form = document.getElementById('form-registro');
             form.reset(); 
         }, 300);
     });
+
+    document.getElementById("form-registro").addEventListener("input", function (e) {
+        const soloNumeros = ["registro_dni", "registro_telefono"];
+        if (soloNumeros.includes(e.target.name)) {
+            e.target.value = e.target.value.replace(/\D/g, ""); 
+        }
+    });
+
