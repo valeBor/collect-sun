@@ -31,27 +31,27 @@
 
                <li class="nav-item"><a class="nav-link" href="./pages/InicioSesion.html"><i
                         class="bi bi-person"></i></a></li>
-               <!-- Botón en el nav -->
+               
                <li class="nav-item">
                   <a class="nav-link" href="#" id="toggle-carrito"><i class="bi bi-bag"></i></a>
                </li>
 
-               
+
 
                <!-- Aside del carrito -->
                <aside id="carrito-aside" class="carrito-aside">
-                  <h5 class="text-center"><i class="bi bi-bag me-2"></i> Mi carrito</h5>
-
+                  <h5 class="text-center p-3 border-bottom"><i class="bi bi-bag me-2"></i> Mi carrito</h5>
 
                   <div id="items-carrito" class="p-3"></div>
+
                   <div class="p-3 border-top">
-                     <strong>Total: $<span id="total-carrito">0</span></strong>
+                     <strong>Subtotal: $<span id="total-carrito">0</span></strong>
+                     <button id="finalizar-compra" class="btn btn-dark w-100 mt-3">FINALIZAR COMPRA</button>
                   </div>
+
                   <button id="cerrar-carrito" class="btn btn-sm btn-outline-danger position-absolute top-0 end-0 m-2">
                      &times;
                   </button>
-
-                  
                </aside>
 
             </ul>
@@ -99,6 +99,8 @@
 
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
    <script src="./js/carrito.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 </body>
 
 </html>

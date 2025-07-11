@@ -271,7 +271,7 @@ button {
    padding: 10px;
    margin-bottom: 15px;
    border: 1px solid #ccc;
-   /*border-radius: 5px;*/
+   
    font-size: 16px;
    font-family: 'Lucida Sans';
 }
@@ -280,7 +280,7 @@ button {
    width: 100%;
    padding: 10px;
    border: 1px solid #ccc;
-   /*border-radius: 5px;*/
+   
    font-size: 16px;
    font-family: 'Lucida Sans';
    resize: vertical;
@@ -308,7 +308,7 @@ button {
    background-color: var(--backgroundHeader);
    color: var(--colorText);
    border: none;
-   /*border-radius: 5px;*/
+   
    cursor: pointer;
    transition: background 0.3s ease;
 
@@ -531,9 +531,9 @@ footer a {
 .carrito-aside {
    font-family: 'Segoe UI', sans-serif;
    background-color: #fff4e6;
-   /* color pastel arena */
+   
    color: #5d3b1e;
-   /* marrón */
+  
    border-left: 2px solid #bfa585;
 }
 
@@ -546,11 +546,11 @@ footer a {
 
 #cerrar-carrito {
    border: 1px solid #b28e5d;
-   /* Borde arena */
+   
    background-color: #fff4e6;
-   /* Fondo claro pastel */
+  
    color: #5d3b1e;
-   /* Texto marrón */
+   
    font-weight: bold;
    border-radius: 50%;
    width: 30px;
@@ -562,9 +562,9 @@ footer a {
 
 #contador-carrito {
    background-color: #d6b27f;
-   /* color arena pastel */
+   
    color: var(--colorText);
-   /* marrón oscuro */
+   
 }
 
 
@@ -584,4 +584,40 @@ footer a {
 
    background-color: #f5de99 !important;
 
+}
+
+
+ #finalizar-compra{
+   padding: 10px;
+   font-size: 16px;
+   background-color: var(--backgroundHeader)!important;
+   color: var(--colorText)!important;
+   border: none;
+
+   cursor: pointer;
+   transition: background 0.3s ease;
+}
+
+ #finalizar-compra:hover {
+   background-color: #d4c48a;
+}
+
+
+.btn-eliminar {
+  background-color: transparent;
+  border: none;
+  color: #333;
+  font-size: 1.2rem;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-eliminar:hover {
+  background-color: #f8d7da;
+  color: #a94442;
 }
