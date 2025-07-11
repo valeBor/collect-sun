@@ -19,12 +19,13 @@
 
 - **HTML5** para la estructura de las páginas.
 - **CSS3** con variables y media queries para el diseño visual y responsive.
+- **JavaScript** para agregar interactividad y funcionalidad a la página.
 
 
 ---
 
 ## Autoría
 
-Proyecto desarrollado por [Borgatti Valeria], como parte de un proyecto personal o académico.  
+Proyecto desarrollado por [Borgatti Valeria].  
 Diseñado con inspiración en estilos visuales suaves y accesibles.
 
